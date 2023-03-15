@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Oxanium", cursive;
+  text-align: center;
+  background-color: #f6f6f6;
+  color: #8785a2;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #ffc7c7;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+/* AESTHETICS */
+
+.btn {
+  border-radius: 0px;
+  padding: 10px 56.2px;
+  transition-duration: 0.4s;
+  box-shadow: 2px 0 2px 0 #ffe2e2;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #8785a2;
+}
+
+.guess {
+  width: 70px;
+  height: 40px;
+  font-size: 1em;
+}
+
+/* CONTAINERS */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.5em;
+  padding: 3%;
+}
+
+.top {
+  box-shadow: 2px 1px #ffe2e2 inset;
+  padding: 3px 5px;
+}
+
+.bottom {
+  align-self: flex-end;
+  border-radius: 5%;
+  border: solid 2px #ffc7c7;
+  padding: 3px 5px;
+}
+
+.one {
+}
+
+.two {
+}
+
+.three {
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .bottom {
+    align-self: auto;
+  }
+}
